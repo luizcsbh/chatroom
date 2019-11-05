@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1
+    "start": "./node_modules/.bin/nodemon --inspect=0.0.0.0:9229 ./bin/www",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Luiz Santos",
   "license": "MIT",
