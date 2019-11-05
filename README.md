@@ -5,5 +5,5 @@
 ![node](https://img.shields.io/node/v/express)
 ![tag](https://img.shields.io/github/v/tag/luizcsbh/chatroom)
 
-# chatroom
+# :computer: chatroom
 Sala de bate-papo desenvolvida com Nodejs
