@@ -1,15 +1,15 @@
-  nome : Enviar por push
+name: Push on commit
 
- on : [push]
+on: [commit]
 
- empregos :
-   construir :
+jobs:
+  build:
 
-     roda em : ubuntu-latest
+    runs-on: ubuntu-latest
 
-     etapas :
-     - nome : Enviar notificação por push
-       usos : techulus/push-github-action@v0.0.2
-       env :
-         API_KEY : $ {{92fb5f58-94c9-4ed0-94b4-bc6aac8f01c7}}
-         MENSAGEM : " Existe um novo commit! " 
+    steps:
+    - name: Send Commit Notification
+      uses: techulus/push-github-action@v0.0.2
+      env:
+        API_KEY: ${{ secrets.92fb5f58-94c9-4ed0-94b4-bc6aac8f01c7 }}
+        MESSAGE: "Existe um novo commit!"
