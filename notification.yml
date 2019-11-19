@@ -1,0 +1,15 @@
+  nome : Enviar por push
+
+ on : [push]
+
+ empregos :
+   construir :
+
+     roda em : ubuntu-latest
+
+     etapas :
+     - nome : Enviar notificação por push
+       usos : techulus/push-github-action@v0.0.2
+       env :
+         API_KEY : $ {{92fb5f58-94c9-4ed0-94b4-bc6aac8f01c7}}
+         MENSAGEM : " Existe um novo commit! " 
